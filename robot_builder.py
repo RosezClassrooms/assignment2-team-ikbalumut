@@ -26,8 +26,6 @@ class Robot:
 
 
 # CONCRETE CLASSES FOR COMPONENTS
-#class ProductType:
-#  p_type = None
 
 class Traversal:
   leg = None
