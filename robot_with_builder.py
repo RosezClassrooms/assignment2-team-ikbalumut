@@ -163,7 +163,6 @@ print(builder.get_product())
 #  Keep line below whether testing builders or director
 '''
 #-------------------------------------------------------
-
 # Diretor manages all of the Builders
 # Do we need separate make methods?
 class Director:
@@ -171,20 +170,14 @@ class Director:
         builder.build_traversal()
         builder.build_detection_system()
         return builder.get_product()
-
     def make_autonomous_car(self, builder):
         builder.build_traversal()
         builder.build_detection_system()
         return builder.get_product()
-
 director = Director()
-
 builder = AndroidBuilder()
 print(director.make_android(builder))
-
 builder = AutonomousCarBuilder()
 print(director.make_autonomous_car(builder))
-
 # comment out line below when testing director
 '''
-
